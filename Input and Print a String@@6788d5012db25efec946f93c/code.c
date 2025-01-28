@@ -4,5 +4,5 @@ int main() {
     char MyString;
     scanf("%c",&MyString);
     printf("You entered: %s",MyString);
- 
+    return 0;
 }
