@@ -7,7 +7,7 @@ char* welcome() {
 int main() {
     float a;
     scanf("%.2f",&a);
-    printf("You entered:",a);
+    printf("You entered:%f",a);
     // printf("%s", welcome());
     return 0;
 }
