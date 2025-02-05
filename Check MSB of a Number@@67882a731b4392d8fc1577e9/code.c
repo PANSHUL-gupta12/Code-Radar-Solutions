@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define INT_bits 32
+// #define INT_bits 32
 
 int main() {
     int a;
