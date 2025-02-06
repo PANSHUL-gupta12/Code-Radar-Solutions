@@ -2,8 +2,9 @@
 
 int main() {
     int a;
+    int b=2;
     scanf("%d",&a);
-    if(a % 2 =0){
+    if(a % b =0){
         printf("Even");
     }
     else{
