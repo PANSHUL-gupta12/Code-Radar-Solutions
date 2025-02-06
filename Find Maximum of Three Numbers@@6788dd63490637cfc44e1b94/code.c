@@ -11,6 +11,6 @@ int main() {
         printf("%d",c);
     }
     else{
-        printf("%d",a)
+        printf("%d",a);
     }
 }
