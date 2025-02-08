@@ -22,7 +22,7 @@ int main() {
             printf("%d\n",res);
         }
         else{
-            printf("error")
+            printf("error");
         }
     }
     else{
