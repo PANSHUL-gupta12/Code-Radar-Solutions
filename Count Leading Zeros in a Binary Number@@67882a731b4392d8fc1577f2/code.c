@@ -5,11 +5,12 @@ int main() {
     scanf("%u",&n);
 
     int count=0;
-    if(n==0){
-        printf("32\n");
+    if(n == 0){
+        printf("32");
+        return 0;
     }
 
-    for (int i==31;i>=0;i--){
+    for (int i=31;i>=0;i--){
         if((n >> 1) & 1){
             break;
         }
