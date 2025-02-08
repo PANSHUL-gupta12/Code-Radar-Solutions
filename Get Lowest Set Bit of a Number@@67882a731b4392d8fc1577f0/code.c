@@ -7,5 +7,5 @@ int main() {
         a>>=1;
         pos++;
     }
-    printf("%d",pos*(a>0));
+    printf("%d",pos);
 }
