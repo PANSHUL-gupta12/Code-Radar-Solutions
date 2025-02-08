@@ -17,8 +17,13 @@ int main() {
         printf("%d\n",res);
     }
     else if(op=='/'){
-        res=n1/n2;
-        printf("%d\n",res);
+        if(n2!=0){
+            res=n1/n2;
+            printf("%d\n",res);
+        }
+        else{
+            printf("error")
+        }
     }
     else{
         printf("error");
