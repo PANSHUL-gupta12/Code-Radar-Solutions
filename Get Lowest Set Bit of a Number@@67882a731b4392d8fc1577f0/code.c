@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int a;
+    int a , pos=1;
     scanf("%d",&a);
-    if(a==0){
-        
+    while((a&1)==0&&a>0){
+        a>>=1;
+        pos++;
     }
+    printf("%d",pos*(a>0));
 }
