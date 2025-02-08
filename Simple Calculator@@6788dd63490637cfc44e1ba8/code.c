@@ -1,19 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int n1,n2;
+    int n1,n2,res;
     char op;
     scanf("%d %d %c",&n1,&n2,&op);
     if(op=="+"){
-        printf("%d",n1+n2);
+        res=n1+n2;
+        printf("%d",res);
     }
     else if(op=="-"){
-        printf("%d",n1-n2);
+        res=n1-n2;
+        printf("%d",res);
     }
     else if(op=="*"){
-        printf("%d",n1*n2);
+        res=n1*n2;
+        printf("%d",res);
     }
     else if(op=="/"){
-        printf("%d",n1/n2);
+        res=n1/n2;
+        printf("%d",res);
     }
 }
