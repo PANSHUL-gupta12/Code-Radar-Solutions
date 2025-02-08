@@ -3,21 +3,21 @@
 int main() {
     int n1,n2,res;
     char op;
-    scanf("%d %d %c",&n1,&n2,&op);
+    scanf("%1f %1f %c",&n1,&n2,&op);
     if(op=='+'){
         res=n1+n2;
-        printf("%d",res);
+        printf("%.2f",res);
     }
     else if(op=='-'){
         res=n1-n2;
-        printf("%d",res);
+        printf("%.2f",res);
     }
     else if(op=='*'){
         res=n1*n2;
-        printf("%d",res);
+        printf("%.2f",res);
     }
     else if(op=='/'){
         res=n1/n2;
-        printf("%d",res);
+        printf("%.2f",res);
     }
 }
