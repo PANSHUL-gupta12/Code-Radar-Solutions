@@ -6,18 +6,18 @@ int main() {
     scanf("%f %f %c",&n1,&n2,&op);
     if(op=='+'){
         res=n1+n2;
-        printf("%.2f",res);
+        printf("%d",res);
     }
     else if(op=='-'){
         res=n1-n2;
-        printf("%.2f",res);
+        printf("%d",res);
     }
     else if(op=='*'){
         res=n1*n2;
-        printf("%.2f",res);
+        printf("%d",res);
     }
     else if(op=='/'){
         res=n1/n2;
-        printf("%.2f",res);
+        printf("%d",res);
     }
 }
