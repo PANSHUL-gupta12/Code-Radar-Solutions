@@ -4,7 +4,7 @@ int main() {
     unsigned int n;
     scanf("%u",&n);
 
-    int count==0;
+    int count=0;
     if(n == 0){
         printf("32");
         return 0;
