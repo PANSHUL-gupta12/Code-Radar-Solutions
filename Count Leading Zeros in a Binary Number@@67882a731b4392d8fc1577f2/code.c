@@ -11,7 +11,7 @@ int main() {
     }
 
     for (int i=30;i>=0;i--){
-        if((n >> 1) & 1){
+        if((n >> i) & 1){
             break;
         }
         count++;
