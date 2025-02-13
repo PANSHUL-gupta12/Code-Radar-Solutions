@@ -1,23 +1,34 @@
-int main(){
-    int n;
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    // Upper half including the middle row
+    for (int i = 1; i <= N; i++) {
+        // Print spaces
+        for (int j = 0; j < N - i; j++) {
             printf(" ");
         }
-        for (int j = 0; j < 2 * i + 1; j++) {
+        // Print stars
+        for (int k = 0; k < (2 * i - 1); k++) {
             printf("*");
         }
         printf("\n");
     }
-    for (int i = n - 2; i >= 0; i--) {
-        for (int j = 0; j < n - i - 1; j++) {
+
+    // Lower half (one row less than the top half)
+    for (int i = N - 1; i >= 1; i--) {
+        // Print spaces
+        for (int j = 0; j < N - i; j++) {
             printf(" ");
         }
-        for (int j = 0; j < 2 * i + 1; j++) {
+        // Print stars
+        for (int k = 0; k < (2 * i - 1); k++) {
             printf("*");
         }
         printf("\n");
     }
+
     return 0;
 }
