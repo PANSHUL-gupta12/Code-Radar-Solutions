@@ -1,15 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    int a;
+    int n, i, j;
     char ch;
-    scanf("%c",&a);
-    for (int i = 1;i <= a;i++){
-        ch='A';
-        for (int j = 1;j <= i;j++){
-            printf("%C ",ch);
-            ch++;
+
+    // Input the number of rows
+    
+    scanf("%d", &n);
+
+    // Loop to print the pattern
+    for(i = 1; i <= n; i++) {  // Controls the number of rows
+        ch = 'A';  // Reset character for each row
+        for(j = 1; j <= i; j++) {  // Prints letters in each row
+            printf("%c ", ch);
+            ch++;  // Move to next letter
         }
-        printf("\n");
+        printf("\n");  // Move to the next line
     }
+
+    return 0;
 }
