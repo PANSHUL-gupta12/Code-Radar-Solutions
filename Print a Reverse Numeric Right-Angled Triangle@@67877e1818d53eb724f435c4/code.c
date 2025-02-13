@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int N;
-    
-    scanf("%d", &N);
+    int n, i, j;
 
-    for (int i = 1; i <= N; i++) {
-        for (int j = i; j >= 1; j--) {
-            printf("%d ", j);
+    // Input the number of rows
+    
+    scanf("%d", &n);
+
+    // Loop to print the pattern
+    for(i = n; i >= 1; i--) {  // Controls the number of rows
+        for(j = 1; j <= i; j++) {  // Prints numbers in each row
+            printf("%d", j);
         }
-        printf("\n");
+        printf("\n");  // Move to the next line
     }
 
     return 0;
