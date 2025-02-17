@@ -1,20 +1,9 @@
-#include <stdio.h>
-
-int main() {
-    unsigned int n;
-    scanf("%u",&n);
-
-    int count=0;
-    if(n == 0){
-        printf("32");
-        return 0;
-    }
-
-    for (int i=31;i>=0;i--){
-        if((n >> i) & 1){
-            break;
-        }
-        count++;
-    }
-    printf("%d",count);
+// Your code here...
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int c = __builtin_clz(a);
+    printf("%d",c);
 }
