@@ -1,18 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-    int n;
+int main() {
+    int n, i, j;
+    
     scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            printf(" ");
+    
+    // Loop for rows
+    for (i = 0; i <= n; i++) {
+        // Loop for printing numbers
+        for (j = 1; j <= i; j++) {
+            printf("%d ", j);
         }
-        for (int j = 0; j <= i; j++) {
-            printf("%d ",i+j);
-        }
-        printf("\n");
+        printf("\n");  // Move to the next line
     }
+
     return 0;
 }
-    
