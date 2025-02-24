@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int a;
-    char ch;
-    scanf("%d",&a);
-    for (int i = 0;i <= a;i--){
-        ch='A';
-        for (int j = 0;j <= a-i;j++){
-            printf("%C ",ch + j);
-            ch++;
+    int n, i, j;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n - i; j++) {
+            printf("%c", 'A' + j);
         }
         printf("\n");
     }
+
+    return 0;
 }
