@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &n);
     
     // Loop for rows
-    for (i = 0; i <= n; i++) {
+    for (i = 1; i <= n; i++) {
         // Loop for printing numbers
         for (j = 1; j <= i; j++) {
             printf("%d ", j);
